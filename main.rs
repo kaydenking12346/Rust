@@ -24,7 +24,6 @@ enum Operation {
 }
 
 fn main() {
-    // get numbers
     let mut input = String::new();
     println!("Enter number 1:");
     io::stdin().read_line(&mut input).unwrap();
@@ -35,7 +34,6 @@ fn main() {
     io::stdin().read_line(&mut input).unwrap();
     let num_two: i32 = input.trim().parse().unwrap();
 
-    // get operation choice
     input.clear();
     println!("Choose operation (1=Add, 2=Subtract, 3=Multiply, 4=Divide):");
     io::stdin().read_line(&mut input).unwrap();
@@ -50,7 +48,6 @@ fn main() {
         }
     };
 
-    // call function from module
     match choice {
         Operation::Add => calculator::addition(num_one, num_two),
         Operation::Subtract => calculator::subtraction(num_one, num_two),
