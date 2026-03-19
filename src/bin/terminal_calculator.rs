@@ -1,8 +1,6 @@
 use std::io;
 
 mod calculator {
-    use std::io;
-
     pub fn addition(a: i32, b: i32) {
         println!("Answer: {}", a + b);
     }
