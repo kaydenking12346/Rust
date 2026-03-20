@@ -5,4 +5,5 @@ This repo contains my Rust practise projects. Acting as a timeline as I learn ru
 ## Projects
 - Terminal Calculator
 - Terminal To-do list
-- Password Checker
+- Password Check
+- Name / Age Checker
