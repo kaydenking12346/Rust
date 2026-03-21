@@ -1,55 +1,35 @@
 use std::io;
 
-mod calculator {
-    pub fn addition(a: i32, b: i32) {
-        println!("Answer: {}", a + b);
-    }
-    pub fn subtraction(a: i32, b: i32) {
-        println!("Answer: {}", a - b);
-    }
-    pub fn multiplication(a: i32, b: i32) {
-        println!("Answer: {}", a * b);
-    }
-    pub fn division(a: i32, b: i32) {
-        println!("Answer: {}", a / b);
-    }
+fn choice() {
+        let answer: i32;
+        let mut choice_two: String = String::new();
+        let mut x = String::new(); println!("Enter number:"); 
+        io::stdin().read_line(&mut x).expect("Error");
+        let mut y = String::new(); println!("Enter number:"); 
+        io::stdin().read_line(&mut y).expect("Error");
+        println!("
+What calculation:
+(1) Addition
+(2) Subtraction
+(3) Multiplication
+(4) Division
+        "); io::stdin()
+            .read_line(&mut choice_two)
+            .expect("Error");
+            let x: i32 = x.trim().parse().expect("Error");
+            let y: i32 = y.trim().parse().expect("Error");
+            if choice_two.trim() == "1" {
+                answer = x + y; println!("{} + {} = {}", x, y, answer);
+            } else if choice_two.trim() == "2" {
+                answer = x - y; println!("{} - {} = {}", x, y, answer);
+            } else if choice_two.trim() == "3" {
+                answer = x * y; println!("{} x {} = {}", x, y, answer);
+            } else if choice_two.trim() == "4" {
+                answer = x / y; println!("{} ÷ {} = {}", x, y, answer);
+            }
 }
-enum Operation {
-    Add,
-    Subtract,
-    Multiply,
-    Divide,
-}
+
 
 fn main() {
-    let mut input = String::new();
-    println!("Enter number 1:");
-    io::stdin().read_line(&mut input).unwrap();
-    let num_one: i32 = input.trim().parse().unwrap();
-
-    input.clear();
-    println!("Enter number 2:");
-    io::stdin().read_line(&mut input).unwrap();
-    let num_two: i32 = input.trim().parse().unwrap();
-
-    input.clear();
-    println!("Choose operation (1=Add, 2=Subtract, 3=Multiply, 4=Divide):");
-    io::stdin().read_line(&mut input).unwrap();
-    let choice = match input.trim() {
-        "1" => Operation::Add,
-        "2" => Operation::Subtract,
-        "3" => Operation::Multiply,
-        "4" => Operation::Divide,
-        _ => {
-            println!("Invalid choice");
-            return;
-        }
-    };
-
-    match choice {
-        Operation::Add => calculator::addition(num_one, num_two),
-        Operation::Subtract => calculator::subtraction(num_one, num_two),
-        Operation::Multiply => calculator::multiplication(num_one, num_two),
-        Operation::Divide => calculator::division(num_one, num_two),
-    }
+    choice();
 }
