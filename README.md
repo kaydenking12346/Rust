@@ -7,3 +7,4 @@ This repo contains my Rust practise projects. Acting as a timeline as I learn ru
 - Terminal To-do list
 - Password Check
 - Name / Age Checker
+- Sort numbers
