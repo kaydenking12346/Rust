@@ -8,3 +8,4 @@ This repo contains my Rust practise projects. Acting as a timeline as I learn ru
 - Password Check
 - Name / Age Checker
 - Sort numbers
+- Profile
