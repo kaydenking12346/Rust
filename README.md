@@ -9,3 +9,4 @@ This repo contains my Rust practise projects. Acting as a timeline as I learn ru
 - Name / Age Checker
 - Sort numbers
 - Profile
+- Simple Closure (Intro)
