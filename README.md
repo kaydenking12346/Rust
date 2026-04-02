@@ -1,3 +1,4 @@
+---
 # Rust Projects
 
 This repo contains my Rust practise projects. Acting as a timeline as I learn rust
@@ -10,3 +11,4 @@ This repo contains my Rust practise projects. Acting as a timeline as I learn ru
 - Sort numbers
 - Profile
 - Simple Closure (Intro)
+---
