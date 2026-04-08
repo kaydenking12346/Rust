@@ -1,7 +1,7 @@
 ---
 # Rust Projects
 
-This repo contains my Rust practise projects. Acting as a timeline as I learn rust
+This repo contains my Rust practise projects. Timeline as I learn rust
 
 ## Projects
 - Terminal Calculator
