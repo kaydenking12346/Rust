@@ -12,5 +12,5 @@ This repo contains my Rust practise projects. Timeline as I learn rust
 - Name / Age Checker
 - Sort numbers
 - Profile
-- Simple Closure (Intro)
+- Simple Closures
 ---
