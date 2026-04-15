@@ -21,7 +21,7 @@ fn ask_choice() -> ToDoAction {
         "3" => ToDoAction::View,
         _ => {
             println!("Invalid choice, try again!");
-            ask_choice() // recursively ask again
+            ask_choice()
         }
     }
 }
